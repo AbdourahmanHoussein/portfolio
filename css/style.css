@@ -1,0 +1,322 @@
+:root{
+    --colorPrincipal:rgb(0, 255, 0);
+    --police:sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+.acceuil-contenu span{
+    font-weight: bold;
+}
+
+/* *******************header */
+.header,.about,.acceuil,.projet,.competence,.contact{
+   margin-bottom: 60px;
+}
+.entete{
+    /* background-color: aqua; */
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color:var(--colorPrincipal);
+    font-family:'Courier New', Courier, monospace;
+    font-size:40px;
+    font-weight: bold;
+}
+.navba{
+    /* border: 1px solid black; */
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.menu{
+    /* border: 1px solid black; */
+    width: 63%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.menu a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: large;
+    color: black;
+    transition: 0.25ms;
+}
+/* .active{
+    border-bottom: 2px solid var(--colorPrincipal);
+} */
+.menu a:hover{
+    border-bottom: 2px solid var(--colorPrincipal);
+}
+.btn-contact{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: large;
+    border: 2px solid var(--colorPrincipal);
+    padding: 10px;
+    color: black;
+}
+.btn-contact:hover{
+    box-shadow: 2px 2px 5px rgb(63, 56, 56);
+}
+#icons{
+    cursor: pointer;
+    display: none;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-bottom: .9rem;
+}
+/* *******************acceuil */
+.acceuil-contenu{
+    /* background-color: red; */
+    text-align: center;
+}
+.acceuil-contenu p{
+    font-size: 50px;
+    margin-bottom: 80px;
+
+}
+.acceuil-contenu h1{
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 40px 0;
+
+}
+.acceuil-contenu h1 span{
+    color: var(--colorPrincipal);
+}
+.acceuil-contenu .btn{
+    padding: 0.5em;
+    border: 2px solid var(--colorPrincipal);
+    border-radius: 0;
+    margin: 2px;
+}
+.acceuil-contenu .btn-clair a{
+    text-decoration: none;
+    color: black;
+}
+.acceuil-contenu .btn-fonce{
+    background-color: var(--colorPrincipal);
+    
+}
+.acceuil-contenu .btn-fonce:hover{
+    border: 2px solid var(--colorPrincipal);
+    color: var(--colorPrincipal);
+}
+.acceuil-contenu .btn-fonce{
+    text-decoration: none;
+    color: white;
+}
+.acceuil-img{
+    /* border: 1px solid yellow; */
+    text-align: center;
+}
+
+
+/* *******************about */
+.about-contenu {
+    text-align: justify;
+    
+}
+.about-img{
+    text-align: center;
+}
+.about-contenu h2{
+    text-align: center;
+    margin-bottom: 30px;
+    /* display: inline-block; */
+    /* border-bottom: 2px solid var(--colorPrincipal); */
+}
+.about-contenu p{
+    font-size: 17px;
+}
+.about .addresse{
+    text-align: center;
+    margin-top: 50px;
+}
+.addresse .addresse-titre{
+    font-size: large;
+    font-weight: bold;
+
+}
+/* *******************competence */
+.competence-contenu{
+    background-color:rgb(41, 27, 27);
+    text-align: center;
+}
+.competence h2{
+    /* border-bottom: 2px solid var(--colorPrincipal); */
+    text-align: center;
+    margin-bottom: 40px;
+}
+.competence .pourcentage{
+    font-size: 30px;
+    color: rgb(85, 73, 73);
+}
+.competence .skill{
+    font-size: 15px;
+    color: var(--colorPrincipal);
+    /* text-align: center */
+}
+/* *******************projet */
+/* .projet{
+    background-color: blueviolet;
+} */
+.projet-contenu h2{
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 2em;
+}
+.projet-contenu h3{
+    color: var(--colorPrincipal);
+    margin-bottom: 20px;
+    font-size: xx-large;
+}
+.projet-contenu p{
+    font-size: large;
+    margin: 70px 0;
+}
+.projet-contenu a{
+    padding: 0.5em;
+    background-color: none;
+    border: 2px solid var(--colorPrincipal);
+    color: black;
+    text-decoration: none;
+}
+.projet-contenu a:hover{
+    background-color: var(--colorPrincipal);
+    color: white;
+}
+.projet-blog{
+    margin-bottom: 30px;
+}
+.projet-img{
+    text-align: center;
+}
+.form-contenu a{
+    padding: 0.5em;
+    border: 2px solid var(--colorPrincipal);
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+/* *******************contact */
+.form-contenu{
+    text-align: center;
+}
+input[type=text],input[type=email]{
+    height: 50px;
+    width: 70%;
+    /* border: none; */
+    margin-bottom: 3px;
+}
+textarea{
+    height: 200px;
+    width: 70%;
+    resize: none;
+    padding: 9px;
+}
+/* .form-contenu{
+    position: relative;
+} */
+.form-contenu a{
+    /* position: relative;
+    right: -18%; */
+    margin-left: 60%;
+
+}
+.form-contenu h2{
+    margin-bottom: 40px;
+}
+/* *******************footer */
+.footer{
+    background-color: black;
+    text-align: center;
+    height: 200px;
+    color: white;
+}
+
+@media (max-width: 993px){
+    .acceuil-img{
+        display: none;
+    }
+}
+
+@media (max-width: 767px){
+    .projet-img{
+        margin: 30px 0;
+    }
+    .projet-contenu{
+        text-align: center;
+    }
+    .projet-blog p{
+        text-align: justify;
+    }
+    .form-contenu a{
+        margin-left: 50%;
+    }
+}
+
+@media (max-width:650px) {
+    #icons{
+        display: block;
+    }
+    #icons::before{
+        content: "\2630";
+    }
+    .activee #icons::before{
+        content: "\2715";
+    }
+    .navba{
+        position: absolute;
+        right: 100%;
+        flex-direction: column;
+        top: 11%;
+        background-color: var(--colorPrincipal);
+        width: 40%;
+        text-align: center;
+        transition: 0.25s;
+        height: 130px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+    .menu {
+        flex-direction: column;
+        /* margin: -19px; */
+        height: auto;
+        align-items: center;
+        width: 100%;
+    }
+    .menu a{
+        color: white;
+    }
+    .btn-contact{
+        color: white;
+        border: none;
+        padding: 0%;
+    }
+    .btn-contact:hover{
+        border-bottom:2px solid black;
+    }
+    .menu a:hover{
+        border-bottom:2px solid black;
+    }
+    div.activee .navba{
+        right: 0px;
+    }
+    
+}
