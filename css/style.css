@@ -155,6 +155,7 @@
 /* *******************competence */
 .competence-contenu{
     background-color:rgb(41, 27, 27);
+    /* background-color: linear-gradient(); */
     text-align: center;
 }
 .competence h2{
@@ -262,6 +263,9 @@ textarea{
     .projet-contenu{
         text-align: center;
     }
+    .projet-contenu h3{
+        margin-top: 10px;
+    }
     .projet-blog p{
         text-align: justify;
     }
@@ -311,6 +315,7 @@ textarea{
     }
     .btn-contact:hover{
         border-bottom:2px solid black;
+        box-shadow: none;
     }
     .menu a:hover{
         border-bottom:2px solid black;
